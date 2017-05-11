@@ -1,0 +1,33 @@
+{
+  "name": "wwdcscholars-web-assets",
+  "version": "1.0.0",
+  "description": "Web assets for the WWDCScholars frontends",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WWDCScholars/web-assets"
+  },
+  "keywords": [
+    "web",
+    "asset",
+    "module",
+    "wwdcscholars",
+    "ui"
+  ],
+  "files": [
+    "assets",
+    "styles",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": {
+    "name": "Moritz Sternemann"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WWDCScholars/web-assets/issues"
+  },
+  "homepage": "https://wwdcscholars.com",
+  "license": "MIT"
+}
