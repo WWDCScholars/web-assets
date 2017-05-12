@@ -1,0 +1,31 @@
+.button
+  outline: 0
+  background-color: $white
+  width: 160px
+  padding: 10px
+  border: 1px solid transparent
+  border-radius: $border-radius
+  text-transform: uppercase
+  transition: border-color 100ms linear, background-color 100ms linear
+
+  &:disabled
+    color: $sch-gray
+    background-color: $sch-gray3
+    border: 1px solid $sch-gray
+
+@mixin button-color($name, $color, $color2)
+  .section-accent-color-#{$name}
+    .button-primary:not([disabled])
+      color: $color2
+      background-color: $color
+      border-color: $color
+
+    .button-secondary:not([disabled])
+      color: $color
+      background-color: $color2
+      border-color: $color
+
++button-color("red", $sch-red, $white)
++button-color("orange", $sch-orange, $white)
++button-color("green", $sch-green, $white)
++button-color("blue", $sch-blue, $white)
