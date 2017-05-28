@@ -1,13 +1,15 @@
 $white: rgb(255, 255, 255)
 
-$sch-purple: rgb(65, 53, 153)
 $sch-purple-med: rgb(106, 101, 164)
 $sch-purple-light: rgb(141, 139, 193)
 
-$sch-red: #EF5349
-$sch-blue: #3EB5D9
-$sch-green: #3AB298
-$sch-orange: #F99532
+$sch-purple: #413A99
+$sch-red1:   #D83946
+$sch-red2:   #E64D43
+$sch-blue1:  #4DB0CE
+$sch-blue2:  #395D6F
+$sch-green:  #51AA96
+$sch-orange: #E1A931
 
 $sch-error: #D83946
 
@@ -25,12 +27,33 @@ $form-border-color: rgb(151, 151, 151)
 
 .color-purple
   color: $sch-purple
-.color-red
-  color: $sch-red
-.color-blue
-  color: $sch-blue
+.color-red1
+  color: $sch-red1
+.color-red2
+  color: $sch-red2
+.color-blue1
+  color: $sch-blue1
+.color-blue2
+  color: $sch-blue2
 .color-green
   color: $sch-green
-
+.color-orange
+  color: $sch-orange
 .color-gray
   color: $sch-gray
+
+@mixin color($name, $color)
+  .section-accent-color-#{$name}
+    h1, h2, h3, b
+      color: $color
+
+    b
+      font-weight: 600
+
++color("purple", $sch-purple)
++color("red1", $sch-red1)
++color("red2", $sch-red2)
++color("blue1", $sch-blue1)
++color("blue2", $sch-blue2)
++color("green", $sch-green)
++color("orange", $sch-orange)
