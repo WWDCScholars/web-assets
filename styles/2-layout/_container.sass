@@ -30,3 +30,15 @@
 
 .container-outer
   padding-bottom: 80px
+
+.container-split-70
+  width: 70%
+
+.container-split-30
+  width: 30%
+
+div[class^="container-split-"]
+  display: inline-block
+
+  @media (max-width: $screen-md-min)
+    width: 100%
